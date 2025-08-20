@@ -1,0 +1,78 @@
+ header {
+     width: 75%;
+     margin: 10px auto;
+     height: 80px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .brand {
+     font-size: 1.5rem;
+     letter-spacing: 4px;
+ }
+
+ .brandDiv {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .brandDiv img {
+     width: 30px;
+ }
+
+ ul {
+     display: flex;
+     gap: 20px;
+ }
+
+ ul li {
+     list-style-type: none;
+     transition: all 0.2s linear;
+     position: relative;
+ }
+
+ ul li::after {
+     position: absolute;
+     content: "";
+     bottom: 0;
+     left: 0;
+     margin: -3px 0px;
+     height: 2.5px;
+     width: 0%;
+     background-color: #f92524;
+     border-width: 5px;
+     transition: all 0.3s ease-in-out;
+ }
+
+ ul li:hover::after {
+     width: 100%;
+ }
+
+
+ ul li a {
+     color: black;
+     font-size: 1rem;
+
+ }
+
+ li :hover {
+     color: #f92524;
+ }
+
+ .btn {
+     background-color: #f92524;
+     padding: 8px 1.5rem;
+     text-align: center;
+     align-self: center;
+     color: white;
+     border-radius: 4px;
+     transition: all 0.2s ease-in-out;
+ }
+
+ .btn:hover {
+     background-color: #da2929;
+     color: white !important;
+ }

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <style>
+        .heroSection {
+            width: 75%;
+            margin: auto;
+            min-height: 500px;
+            display: flex;
+            padding-top: 90px;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .firstDiv {
+            width: 100%;
+        }
+
+        #headingOne {
+            font-size: 2rem;
+            width: 100%;
+        }
+
+        #headingTwo {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .left,
+        .rihgt {
+            width: 50%;
+        }
+
+        .description {
+            font-size: 0.9rem;
+            color: #64748b;
+            position: relative;
+        }
+
+        .description::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            margin: -11px 0px;
+            min-height: 2px;
+            width: 50px;
+            background-color: red;
+        }
+
+        .joinbtn {
+            border: none;
+            margin-top: 25px;
+        }
+
+        .right img {
+            height: 300px;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="brandDiv">
+            <img src="https://devmindabhay.github.io/flexfit/assets/logo.png" alt="">
+            <div class="brand">Amazefit</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="btn" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="heroSection">
+        <div class="left">
+            <div class="firstDiv">
+                <p id="headingOne">Build Yourself &</p>
+                <p id="headingTwo">Shape Yourself!</p>
+            </div>
+            <div>
+                <p class="description">Embrace the commitment to your health and well-being; with each day's dedication,
+                    you sculpt not only
+                    your body but also a mindset of discipline and self-love.</p>
+            </div>
+            <div>
+                <button class="btn joinbtn">Join Today</button>
+            </div>
+        </div>
+        <div class="right">
+            <img src="./assets/body.png" alt="">
+        </div>
+    </section>
+
+</body>
+
+</html>
